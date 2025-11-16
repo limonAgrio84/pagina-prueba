@@ -1,0 +1,127 @@
+/* ============================================
+   ANIMATIONS.CSS - Animaciones y Efectos (CORREGIDO)
+   ============================================ */
+
+/* IMPORTANTE: Solo usa .fade-in si quieres animación de entrada
+   Si NO quieres animación, NO uses esta clase */
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.fade-in-left {
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: all 0.8s ease-out;
+}
+
+.fade-in-left.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.fade-in-right {
+    opacity: 0;
+    transform: translateX(30px);
+    transition: all 0.8s ease-out;
+}
+
+.fade-in-right.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.scale-in {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: all 0.8s ease-out;
+}
+
+.scale-in.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Animación del nav - Siempre visible */
+@keyframes slideDown {
+    from { transform: translateY(-100px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+nav {
+    animation: slideDown 0.8s ease-out;
+    animation-fill-mode: both;
+}
+
+/* Animación del hero - Siempre visible */
+@keyframes fadeInUp {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.hero-content {
+    animation: fadeInUp 1s ease-out;
+    animation-fill-mode: both;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.8; transform: scale(1.02); }
+}
+
+.pulse {
+    animation: pulse 3s infinite ease-in-out;
+}
+
+.hover-lift {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.hover-scale {
+    transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+    transform: scale(1.05);
+}
+
+/* Delays para animaciones escalonadas */
+.delay-100 {
+    animation-delay: 0.1s;
+    transition-delay: 0.1s;
+}
+
+.delay-200 {
+    animation-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+
+.delay-300 {
+    animation-delay: 0.3s;
+    transition-delay: 0.3s;
+}
+
+.delay-400 {
+    animation-delay: 0.4s;
+    transition-delay: 0.4s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}

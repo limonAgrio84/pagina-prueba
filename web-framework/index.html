@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArtWeb</title>
+    
+    <!-- Fuentes -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS Framework -->
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/glass-components.css">
+    <link rel="stylesheet" href="./assets/css/animations.css">
+</head>
+<body>
+    
+    <!-- Background Animado (NO QUITAR) -->
+    <div class="bg-animation">
+        <div class="blob blob1"></div>
+        <div class="blob blob2"></div>
+        <div class="blob blob3"></div>
+    </div>
+
+    <!-- ============================================
+         NAVEGACIÓN
+         ============================================ -->
+    <nav class="glass">
+        <div class="logo">ArtWeb</div>
+        <ul class="nav-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#about">Conocenos</a></li>
+            <li><a href="#portafolio">Portafolio</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- ============================================
+         HERO
+         ============================================ -->
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <h1>Creamos Tu Pagina Web<br>Moderna</h1>
+            <p class="subtitle">
+                Creamos y diseños tu pagina web con un diseño moderno además,<br>
+                te dara estadisticas de tus clientes y vistas.
+            </p>
+            
+            <div class="cta-buttons">
+                <div class="button-wrap">
+                    <button id="btn-contact-hero">
+                        <span>Contactanos</span>
+                    </button>
+                    <div class="button-shadow"></div>
+                </div>
+                
+                <div class="button-wrap">
+                    <button class="btn-secondary" id="btn-more-hero">
+                        <span>Conocenos</span>
+                    </button>
+                    <div class="button-shadow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         CARACTERÍSTICAS / SERVICIOS
+         ============================================ -->
+    <section class="section" id="servicios">
+        <div class="grid-3">
+            <div class="feature-card glass">
+                <div class="feature-icon">🎨</div>
+                <h3>Diseño Premium</h3>
+                <p>Un diseño elegante y exclusivo para cualquier tipo de negocio</p>
+            </div>
+            
+            <div class="feature-card glass">
+                <div class="feature-icon">📊</div>
+                <h3>Análisis Avanzado</h3>
+                <p>Ofrecemos estadisticas recibidas por la pagina</p>
+            </div>
+            
+            <div class="feature-card glass">
+                <div class="feature-icon">🚀</div>
+                <h3>Alto Rendimiento</h3>
+                <p>Una pagina fluida que no tiene errores</p>
+            </div>
+            
+           
+            
+            <div class="feature-card glass">
+                <div class="feature-icon">💬</div>
+                <h3>Soporte 24/7</h3>
+                <p>Ofrecemos soporte para cualquier inconveniente</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us (usa tus utilidades container/section/glass) -->
+<!-- About Us con imágenes -->
+<section class="section" id="about">
+  <div class="container">
+    <h2 class="text-center">Sobre Nosotros</h2>
+    <p class="text-center" style="color: var(--text-tertiary); max-width: 800px; margin: 0 auto 1.25rem;">
+      Somos Leonardo y Osvaldo. Diseñamos y desarrollamos sitios web modernos con enfoque en rendimiento, seguridad y métricas.
+    </p>
+
+    <div class="grid-2">
+      <div class="glass glass-padding glass-rounded">
+        <div class="flex-between" style="gap:1rem; align-items:center;">
+          <img src="./assets/img/leonardo.png" alt="Leonardo" loading="lazy"
+               style="width:96px; height:96px; object-fit:cover; border-radius:20px; border:1px solid rgba(255,255,255,0.6);">
+          <div>
+            <h3>Leonardo</h3>
+            <p class="text-left" style="color: var(--text-tertiary);">
+              Co-fundador · Diseño & Frontend. Experiencia de usuario y la parte visual.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="glass glass-padding glass-rounded">
+        <div class="flex-between" style="gap:1rem; align-items:center;">
+          <img src="./assets/img/osvaldo.png" alt="Osvaldo" loading="lazy"
+               style="width:96px; height:96px; object-fit:cover; border-radius:20px; border:1px solid rgba(255,255,255,0.6);">
+          <div>
+            <h3>Osvaldo</h3>
+            <p class="text-left" style="color: var(--text-tertiary);">
+              Co-fundador · Backend & Métricas. Rendimiento, seguridad y analíticas.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- ============================================
+         DASHBOARD / PREVIEW
+         ============================================ -->
+    <section class="section" id="portafolio">
+        <div class="container">
+            <h2 class="text-center">Nuestro Trabajo</h2>
+            
+            <div class="preview-container glass glass-padding glass-rounded">
+                <div class="preview-image">
+                    📈
+                </div>
+                
+                <p style="margin-top: 2rem; font-size: 1.1rem; color: var(--text-tertiary); text-align: center;">
+                    No solo diseñamos páginas web atractivas sino que tambien las subimos desde nuestros servidores los cuales ofrecen analisis y estadisticas sobre el rendimiento y las interacciones de los usuarios con la pagina web
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         ESTADÍSTICAS
+         ============================================ -->
+    <section class="section">
+        <div class="grid-4">
+            <div class="stat-card glass">
+                <div class="stat-number">99.9%</div>
+                <div class="stat-label">Uptime</div>
+            </div>
+            
+            <div class="stat-card glass">
+                <div class="stat-number">500+</div>
+                <div class="stat-label">Clientes</div>
+            </div>
+            
+            <div class="stat-card glass">
+                <div class="stat-number">24/7</div>
+                <div class="stat-label">Soporte</div>
+            </div>
+            
+            <div class="stat-card glass">
+                <div class="stat-number">100%</div>
+                <div class="stat-label">Satisfacción</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         FOOTER
+         ============================================ -->
+    
+         <!-- Footer con datos de contacto -->
+<footer id="contacto">
+    <div class="footer-content glass glass-padding glass-rounded">
+        <h2>¿Listo para comenzar?</h2>
+        <p>Contáctanos y llevemos tu proyecto al siguiente nivel</p>
+
+        <div class="grid-2" style="margin-top:1rem;">
+            <div class="glass glass-padding glass-rounded">
+                <strong>WhatsApp:</strong>
+                <a href="https://wa.me/529999999999" target="_blank">+52 999 999 9999</a>
+            </div>
+            <div class="glass glass-padding glass-rounded">
+                <strong>Correo:</strong>
+                <a href="mailto:contacto@tuempresa.com">contacto@tuempresa.com</a>
+            </div>
+        </div>
+
+        <p style="margin-top: 3rem; font-size: 0.9rem; color: var(--text-tertiary);">
+            © 2025 Tu Empresa. Todos los derechos reservados.
+        </p>
+    </div>
+</footer>
+
+
+    
+
+
+    <!-- JavaScript -->
+    <script src="./assets/js/main.js"></script>
+    
+</body>
+</html>

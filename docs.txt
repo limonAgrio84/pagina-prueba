@@ -1,0 +1,332 @@
+# 🎨 Liquid Glass Framework - Documentación
+
+## 📁 Estructura de Archivos
+
+```
+liquid-glass-framework/
+│
+├── assets/
+│   ├── css/
+│   │   ├── base.css              # Estilos base y variables
+│   │   ├── glass-components.css  # Componentes glass reutilizables
+│   │   └── animations.css        # Animaciones y efectos
+│   │
+│   └── js/
+│       └── main.js               # Funcionalidades principales
+│
+├── components/
+│   ├── nav.html                  # Navegación
+│   ├── hero.html                 # Sección Hero
+│   ├── features.html             # Sección de características
+│   ├── dashboard-preview.html    # Preview del dashboard
+│   ├── stats.html                # Estadísticas
+│   └── footer.html               # Footer
+│
+├── pages/
+│   ├── index.html                # Página principal
+│   └── ejemplo.html              # Ejemplo de nueva página
+│
+└── docs/
+    └── README.md                 # Esta documentación
+```
+
+---
+
+## 🚀 Inicio Rápido
+
+### 1. Crear una nueva página
+
+```html
+
+
+
+    
+    
+    Tu Página
+    
+    
+    
+    
+
+
+    
+    
+    
+
+
+```
+
+### 2. Incluir componentes
+
+Simplemente copia y pega el contenido de los archivos HTML de `components/` en tu página.
+
+---
+
+## 🎨 Clases CSS Principales
+
+### Contenedores Glass
+
+```html
+
+
+    Contenido aquí
+
+
+
+
+    Contenido aquí
+
+
+
+
+    Contenido aquí
+
+```
+
+### Botones
+
+```html
+
+
+    
+        Texto del Botón
+    
+    
+
+
+
+
+    
+        Texto del Botón
+    
+    
+
+```
+
+### Tarjetas
+
+```html
+
+    🎨
+    Título
+    Descripción
+
+```
+
+### Secciones
+
+```html
+
+
+    
+        
+    
+
+
+
+
+    
+        Título Principal
+        Subtítulo
+    
+
+```
+
+---
+
+## 🎯 Componentes Disponibles
+
+### Navigation (nav.html)
+- Navegación fija con efecto glass
+- Responsive automático
+- Links con hover effect
+
+**Personalización:**
+```html
+TU LOGO AQUÍ
+
+    Tu Enlace
+
+```
+
+### Hero (hero.html)
+- Título grande y llamativo
+- Subtítulo descriptivo
+- Botones CTA
+
+**Personalización:**
+```html
+Tu Título Aquí
+Tu subtítulo aquí
+```
+
+### Features (features.html)
+- Grid responsive automático
+- Tarjetas con hover effect
+- Iconos personalizables
+
+**Personalización:**
+```html
+🎨 
+Tu Título
+Tu descripción
+```
+
+### Dashboard Preview (dashboard-preview.html)
+- Contenedor para mostrar previews
+- Responsive
+- Efecto glass
+
+### Stats (stats.html)
+- Grid de estadísticas
+- Números grandes destacados
+- Auto-responsive
+
+**Personalización:**
+```html
+99.9%
+Tu Métrica
+```
+
+### Footer (footer.html)
+- Footer con efecto glass
+- CTA final
+- Copyright
+
+---
+
+## 🎨 Variables CSS Personalizables
+
+En `base.css` puedes modificar:
+
+```css
+:root {
+    --anim--hover-time: 400ms;          /* Velocidad animaciones */
+    --anim--hover-ease: cubic-bezier(0.25, 1, 0.5, 1);
+    
+    /* Colores de fondo (modificar en body) */
+    --bg-gradient-1: #f5f9fc;
+    --bg-gradient-2: #faf5fc;
+    --bg-gradient-3: #fcf5f9;
+}
+```
+
+---
+
+## 🔧 Funciones JavaScript
+
+### Scroll Animations
+Automático para elementos con clase `.fade-in`
+
+### Smooth Scroll
+Automático para links con `href="#seccion"`
+
+### Parallax Effect
+Automático en el fondo animado
+
+---
+
+## 📝 Ejemplo: Crear una Nueva Página
+
+1. **Copia el template base:**
+```html
+
+
+
+    
+    
+    Mi Nueva Página
+    
+    
+    
+    
+
+
+    
+    
+        
+        
+        
+    
+
+    
+    
+    
+
+
+```
+
+2. **Agrega los componentes que necesites:**
+- Copia el contenido de `components/nav.html`
+- Copia el contenido de `components/hero.html`
+- Copia otros componentes según necesites
+
+3. **Personaliza el contenido:**
+- Cambia textos
+- Cambia iconos
+- Ajusta colores si es necesario
+
+---
+
+## 🎯 Tips de Uso
+
+### ✅ Buenas Prácticas
+- Usa siempre la clase `glass` para efectos cristalinos
+- Mantén la estructura de `button-wrap` para botones
+- Usa `fade-in` para animaciones de scroll
+- Respeta la jerarquía de títulos (h1, h2, h3)
+
+### ⚠️ Evitar
+- No mezclar estilos inline con las clases
+- No modificar el CSS de animaciones sin probar
+- No usar más de un h1 por página
+
+---
+
+## 🌈 Paleta de Colores
+
+### Fondos
+- Azul claro: `rgba(200, 220, 255, 0.3)`
+- Rosa claro: `rgba(255, 200, 240, 0.25)`
+- Lila claro: `rgba(230, 200, 255, 0.25)`
+
+### Textos
+- Principal: `rgba(40, 40, 40, 0.9)`
+- Secundario: `rgba(40, 40, 40, 0.65)`
+- Terciario: `rgba(40, 40, 40, 0.6)`
+
+### Glass Effects
+- Background: `rgba(255, 255, 255, 0.7)` a `rgba(255, 255, 255, 0.5)`
+- Border: `rgba(255, 255, 255, 0.8)`
+
+---
+
+## 📱 Responsive
+
+Todos los componentes son responsive por defecto:
+- Desktop: 1200px+
+- Tablet: 768px - 1199px
+- Mobile: < 768px
+
+---
+
+## 🆘 Soporte
+
+Si tienes dudas:
+1. Revisa los ejemplos en `pages/ejemplo.html`
+2. Verifica que todos los archivos CSS estén incluidos
+3. Asegúrate de usar la estructura correcta de HTML
+
+---
+
+## 🚀 Próximos Pasos
+
+1. Explora todos los componentes disponibles
+2. Crea tu primera página personalizada
+3. Experimenta con diferentes combinaciones
+4. ¡Comparte tus creaciones!
+
+---
+
+**Versión:** 1.0.0  
+**Última actualización:** Noviembre 2025

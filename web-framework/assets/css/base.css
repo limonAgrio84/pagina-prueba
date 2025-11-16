@@ -1,0 +1,216 @@
+/* ============================================
+   BASE.CSS - Estilos Base y Variables
+   ============================================ */
+
+@property --angle-1 {
+    syntax: "<angle>";
+    inherits: false;
+    initial-value: -75deg;
+}
+
+@property --angle-2 {
+    syntax: "<angle>";
+    inherits: false;
+    initial-value: -45deg;
+}
+
+:root {
+    --anim--hover-time: 400ms;
+    --anim--hover-ease: cubic-bezier(0.25, 1, 0.5, 1);
+    --text-primary: rgba(40, 40, 40, 0.9);
+    --text-secondary: rgba(40, 40, 40, 0.65);
+    --text-tertiary: rgba(40, 40, 40, 0.6);
+    --glass-bg-1: rgba(255, 255, 255, 0.7);
+    --glass-bg-2: rgba(255, 255, 255, 0.5);
+    --glass-border: rgba(255, 255, 255, 0.8);
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 3rem;
+    --spacing-xxl: 4rem;
+    --radius-sm: 12px;
+    --radius-md: 20px;
+    --radius-lg: 30px;
+    --radius-full: 999vw;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #f5f9fc 0%, #faf5fc 50%, #fcf5f9 100%);
+    color: var(--text-primary);
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+    color: var(--text-primary);
+}
+
+h1 {
+    font-size: clamp(2.5rem, 7vw, 5rem);
+    margin-bottom: var(--spacing-md);
+}
+
+h2 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-bottom: var(--spacing-md);
+}
+
+h3 {
+    font-size: clamp(1.4rem, 3vw, 1.8rem);
+    margin-bottom: var(--spacing-sm);
+}
+
+p {
+    margin-bottom: var(--spacing-sm);
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+.container-sm {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+.container-lg {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+.section {
+    padding: var(--spacing-xxl) 5%;
+    position: relative;
+    z-index: 1;
+}
+
+.section-sm {
+    padding: var(--spacing-xl) 5%;
+}
+
+.section-lg {
+    padding: calc(var(--spacing-xxl) * 1.5) 5%;
+}
+
+.bg-animation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.blob {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(100px);
+    opacity: 0.3;
+    animation: float 25s infinite ease-in-out;
+}
+
+.blob1 { 
+    width: 600px; 
+    height: 600px; 
+    background: rgba(200, 220, 255, 0.3);
+    top: -200px; 
+    left: -200px; 
+    animation-delay: 0s; 
+}
+
+.blob2 { 
+    width: 500px; 
+    height: 500px; 
+    background: rgba(255, 200, 240, 0.25);
+    bottom: -150px; 
+    right: -150px; 
+    animation-delay: 7s; 
+}
+
+.blob3 { 
+    width: 450px; 
+    height: 450px; 
+    background: rgba(230, 200, 255, 0.25);
+    top: 40%; 
+    left: 50%; 
+    animation-delay: 14s; 
+}
+
+@keyframes float {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    33% { transform: translate(80px, -80px) scale(1.1); }
+    66% { transform: translate(-80px, 80px) scale(0.9); }
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.grid-4 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--spacing-md);
+}
+
+@media (max-width: 768px) {
+    :root {
+        --spacing-xl: 2rem;
+        --spacing-xxl: 3rem;
+    }
+    .section {
+        padding: var(--spacing-xl) 5%;
+    }
+    .grid-2, .grid-3, .grid-4 {
+        grid-template-columns: 1fr;
+    }
+}

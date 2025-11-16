@@ -1,0 +1,4 @@
+:8080 {
+    root * /Users/leoherrera/documents/github/pagina-prueba/web-framework
+    file_server
+}

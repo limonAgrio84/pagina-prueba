@@ -380,3 +380,113 @@ footer {
         width: 100%; 
     }
 }
+
+/* ============================================
+   AGREGAR ESTO AL FINAL DE glass-components.css
+   FIX PARA HERO EN MÓVIL
+   ============================================ */
+
+@media (max-width: 768px) {
+    /* Nav más compacto */
+    nav {
+        flex-direction: column;
+        gap: 0.75rem;
+        padding: 0.75rem 1rem;
+        margin: 10px 10px;
+        top: 10px;
+    }
+    
+    .logo {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.25rem;
+    }
+    
+    .nav-links a {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.85rem;
+    }
+    
+    /* Hero más compacto */
+    .hero {
+        min-height: auto;
+        padding: 3rem 5% 4rem;
+    }
+    
+    .hero h1 {
+        font-size: clamp(1.8rem, 8vw, 2.5rem);
+        margin-bottom: 1rem;
+    }
+    
+    .subtitle {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+        line-height: 1.5;
+    }
+    
+    .cta-buttons {
+        gap: 0.75rem;
+    }
+    
+    .button-wrap {
+        width: 100%;
+        max-width: 280px;
+    }
+    
+    button span, .glass-button span {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.95rem;
+    }
+    
+    /* Feature cards más compactas */
+    .feature-card {
+        padding: 1.5rem;
+    }
+    
+    .feature-icon {
+        width: 56px;
+        height: 56px;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .feature-card h3 {
+        font-size: 1.2rem;
+    }
+    
+    .feature-card p {
+        font-size: 0.9rem;
+    }
+    
+    /* Stats más compactos */
+    .stat-card {
+        padding: 1.25rem 1rem;
+    }
+    
+    .stat-number {
+        font-size: 2.2rem;
+    }
+    
+    .stat-label {
+        font-size: 0.85rem;
+    }
+    
+    /* Footer más compacto */
+    footer {
+        padding: 2rem 5%;
+        margin-top: 2rem;
+    }
+    
+    .footer-content {
+        padding: 1.5rem;
+    }
+    
+    .footer-content h2 {
+        font-size: 1.5rem;
+    }
+}
